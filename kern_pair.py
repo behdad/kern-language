@@ -589,7 +589,7 @@ if __name__ == "__main__":
     encoding = options.encoding or "utf-8"
     tolerance = options.tolerance or 0.033
     if tolerance >= 1:
-        tolerance = tolerance / kern.FONT_SIZE
+        tolerance = tolerance / FONT_SIZE
     cutoff = options.cutoff or 0.999
     if cutoff > 1:
         cutoff = cutoff / 100.0
